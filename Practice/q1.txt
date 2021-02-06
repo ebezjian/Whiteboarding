@@ -1,0 +1,25 @@
+Question #1: Turning Strings to URLs
+URLs cannot have spaces. Instead, all spaces in a string are replaced with %20. Write an algorithm that replaces all spaces in a string with %20.
+
+You may not use the replace() method or regular expressions to solve this problem. Solve the problem with and without recursion.
+
+Input: "Jasmine Ann Jones"
+Output: "Jasmine%20Ann%20Jones"
+
+NOTE - thoughts
+
+search the string for which positions the "" are in and then replace them with %20
+could use split() to at least remove the spaces
+
+recursive needs three things: base case, termination case and recursion itself.
+
+termination case: 
+if (isNan(noSpace)){
+  return;
+}else{
+  (str.search(" ") then remove and add in %20 at those positions)
+}
+
+const string ="Jasmine Ann Jones" 
+const replaced = string.split(' ').join('20%');
+

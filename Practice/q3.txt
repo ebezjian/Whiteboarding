@@ -1,0 +1,27 @@
+  
+Question #3: Compressing Strings
+Write an algorithm that takes a string with repeated characters and compresses them, using a number to show how many times the repeated character has been compressed. For instance, aaa would be written as 3a. Solve the problem with and without recursion.
+
+Input: "aaabccdddda"
+Output: "3ab2c4da"
+
+Output: "3ab2c4da"
+ can possibly take the string and break it down with split("")
+
+ const str= "aaabccdddda";
+ const res = str.split("");
+ const collect = res.reduce(function(array, res){
+  return array.concat(res.str);
+}, []);
+const tally = collect.reduce(function finalTally, collect) {
+  finalTally[collect] = (finalTally[collect] || 0) + 1;
+  return finalTally;
+}, {});
+ console.log([...new Set(res)])
+
+ keep getting unexpected token error not sure how to fix
+
+
+after this not sure how to return the number of duplicated items (coin changer will be similar)
+
+could you use reduce with this lik ein the vote tally example?

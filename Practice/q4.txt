@@ -1,0 +1,16 @@
+Question #4: Checking for Uniqueness
+Write an algorithm that determines whether all the elements in a string are unique. You may not convert the string into an array or use array methods to solve this problem. The algorithm should return a boolean.
+
+Example
+Input: "hello"
+
+Output: false
+
+Input: "copyright"
+
+Output: true
+
+thought process: 
+1) needs to be a boolean so maybe map could work?
+since we can't convert the string to an array does that remove the useage of split?
+2) includes?
